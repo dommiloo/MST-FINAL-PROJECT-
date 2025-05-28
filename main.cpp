@@ -16,7 +16,7 @@ struct Edge {
     Edge(int s, int d, int w) : src(s), dest(d), weight(w) {}
 };
 
-// Union-Find data structure for Kruskal
+
 class UnionFind {
     vector<int> parent, rank;
 public:
@@ -48,7 +48,7 @@ public:
     }
 };
 
-// Kruskal's algorithm
+
 vector<Edge> kruskalMST(int numVertices, vector<Edge>& edges) {
     sort(edges.begin(), edges.end(), [](Edge a, Edge b) {
         return a.weight < b.weight;
